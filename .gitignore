@@ -36,6 +36,9 @@ replay_pid*
 .idea/**/dictionaries
 .idea/**/shelf
 
+**/.metadata/**
+
+
 # AWS User-specific
 .idea/**/aws.xml
 
@@ -95,3 +98,4 @@ fabric.properties
 .idea
 
 *.iml
+/.metadata/
