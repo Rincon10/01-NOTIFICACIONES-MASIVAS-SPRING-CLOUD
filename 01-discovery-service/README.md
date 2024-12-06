@@ -68,7 +68,7 @@ docker run -d -p <puerto_host>:<puerto_contenedor> --name nombre_instancia <tu_u
 entonces ejecutamos 
 
 ```bash
-docker run -d -p 8761:8761 --name instancia-eureka rincon10/servicio-eureka:1.0 
+docker run -d -p 8761:8761 --name instancia-eureka rincon10/discovery-service:1.0 
 ```
 
 
@@ -92,7 +92,7 @@ docker login
 y luego 
 
 ```bash
-docker push rincon10/servicio-eureka:1.0
+docker push rincon10/discovery-service:1.0
 ```
 
 ### Configuracion en AWS
@@ -119,7 +119,7 @@ sudo usermod -a -G docker ec2-user
 6. A partir de la imagen creada en Dockerhub cree una instancia de un contenedor docker independiente de la consola (opción “-d”) y con el puerto 6000 enlazado a un puerto físico de su máquina (opción -p):
 
 ```bash
-sudo docker run -d -p 8761:8761 --name instancia1-eureka rincon10/servicio-eureka:1.0 
+sudo docker run -d -p 8761:8761 --name instancia1-eureka rincon10/discovery-service:1.0 
 ```
 
 7. Abra los puertos de entrada del security group de la máxima virtual para acceder al servicio
