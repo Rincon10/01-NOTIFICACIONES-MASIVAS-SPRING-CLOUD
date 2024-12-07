@@ -1,32 +1,32 @@
-# Read Me First
-The following was discovered as part of building this project:
+# Notification service
 
-* The original package name 'com.escuelaing.edu.co.distribuited_systems.notification-service' is invalid and this project uses 'com.escuelaing.edu.co.distribuited_systems.notification_service' instead.
+lo primero que haremos sera crear el topic en SNS de aws 
+![alt text](../docs/images/04-notification-service/02-creacion-topic.png)
 
-# Getting Started
 
-### Reference Documentation
-For further reference, please consider the following sections:
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.4.0/maven-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.4.0/maven-plugin/build-image.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.4.0/reference/web/servlet.html)
-* [Eureka Discovery Client](https://docs.spring.io/spring-cloud-netflix/reference/spring-cloud-netflix.html#_service_discovery_eureka_clients)
-* [Config Client](https://docs.spring.io/spring-cloud-config/reference/client.html)
+en nuestro caso lo llamamos Customer Notifications
+![alt text](../docs/images/04-notification-service/01-creacion-topic.png)
 
-### Guides
-The following guides illustrate how to use some features concretely:
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Service Registration and Discovery with Eureka and Spring Cloud](https://spring.io/guides/gs/service-registration-and-discovery/)
+para la integracion con nuestra aplicacion java, usaremos informacion que nos proporciona AWS
 
-### Maven Parent overrides
+![alt text](../docs/images/04-notification-service/03-creacion-topic.png)
 
-Due to Maven's design, elements are inherited from the parent POM to the project POM.
-While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
-To prevent this, the project POM contains empty overrides for these elements.
-If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
+
+Ponemos a ejecutar nuestro servicio
+
+![alt text](../docs/images/04-notification-service/05-ejecucion.png)
+
+y hacemos una peticion para validar su funcionamiento
+
+![alt text](../docs/images/04-notification-service/04-peticion-local.png)
+
+ahora subiremos mas instancias del servicio, para validar su capacidad de escalabilidad
+![alt text](../docs/images/04-notification-service/06-ejecucion-multiple-2.png)
+
+
+validamos en el discovery cuantas instancias tiene
+![alt text](../docs/images/04-notification-service/06-ejecucion-multiple-1.png)
+
 
