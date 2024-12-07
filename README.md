@@ -46,4 +46,4 @@ A continuación se detalla la configuracion de los proyectos
 
 ### Video Funcionamiento Arquitectura propuesta
 
-Video de funcionamiento de la arquitectura propuesta
+Video de funcionamiento de la arquitectura propuesta [aqui](https://www.youtube.com/watch?v=XnXMrjMVN4Q)
