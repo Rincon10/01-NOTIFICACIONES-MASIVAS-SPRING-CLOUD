@@ -26,7 +26,12 @@ public class SnsRequestItemProcessor implements ItemWriter<NotificationRequest> 
     public void write(Chunk<? extends NotificationRequest> chunk) throws Exception {
         log.info("Processing chunk with size {}", chunk.getItems().size());
         chunk.getItems().forEach(notificationRequest -> {
-            apiGatewayClientRest.sendNotification(notificationRequest);
+            try {
+                apiGatewayClientRest.sendNotification(notificationRequest);
+            } catch (Exception exception) {
+                log.error("Error enviando el correo:{}, causa: {}", notificationRequest.getEmail(),
+                        exception.getMessage());
+            }
         });
     }
 }

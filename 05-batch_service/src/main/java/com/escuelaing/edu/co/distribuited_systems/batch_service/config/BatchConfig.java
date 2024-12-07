@@ -73,6 +73,7 @@ public class BatchConfig {
                      SnsRequestItemProcessor writer) {
         return new StepBuilder("chunkStep", jobRepository)
                 .<Client, NotificationResponse>chunk(10, transactionManager)
+                .allowStartIfComplete(true)
                 .reader(clientItemReader(null))
                 .processor(processor)
                 .writer(writer)
