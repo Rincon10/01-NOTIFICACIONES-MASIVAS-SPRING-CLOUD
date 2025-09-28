@@ -30,7 +30,7 @@ En este trabajo se busca analizar y proponer un sistema capaz de realizar la lec
 ### Servicio configuracion (Spring Cloud Config)
 
 - Servicio que almacena la configuracion de los servicios, funcionando como un middleware entre los microservicios y el repositorio, para obtener la configuracion.
-- El repositorio el cual se basara su configuracion para el servicio de notificaciones sera [este](https://github.com/Rincon10/AYGO-PROYECTO-CONFIG)
+- El repositorio el cual se basara su configuracion para el servicio de notificaciones sera [este]([https://github.com/Rincon10/AYGO-PROYECTO-CONFIG](https://github.com/Rincon10/01-NOTIFICACIONES-MASIVAS-SPRING-CLOUD-CONFIG))
 
 ## Desarrollo 
 
