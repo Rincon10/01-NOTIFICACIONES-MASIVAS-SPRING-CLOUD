@@ -1,4 +1,4 @@
-# AYGO-PROYECTO
+# MPV Proyecto envio notificaciones masivas JAVA
 En este trabajo se busca analizar y proponer un sistema capaz de realizar la lectura, procesamiento y manipulación de datos masivos de manera eficiente, centrándonos en el contexto de notificación de facturas clientes, se busca orientar este trabajo a utilizar arquitecturas distribuidas actuales tales como microservicios, buscando así una escalabilidad del sistema al momento de procesar grandes cantidades de datos.
 
 ## Arquitectura propuesta 
