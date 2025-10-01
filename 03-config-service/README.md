@@ -7,7 +7,7 @@ Este manual te guiará para compilar y ejecutar el **servicio Config** basado en
 Si aún no tienes el proyecto en tu máquina, clónalo o navega al directorio del proyecto. Usa el siguiente comando para clonar desde un repositorio (reemplaza `<repository-url>` con la URL de tu repositorio):
 
 ```bash
-git clone https://github.com/Rincon10/AYGO-PROYECTO.git
+git clone https://github.com/Rincon10/01-NOTIFICACIONES-MASIVAS-SPRING-CLOUD.git
 ```
 
 ```bash
